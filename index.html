@@ -4,7 +4,10 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="BreakFast: the most important meal of the day thats why we got you covered ">
     
+    <link rel="stylesheet" href="./CSS/index.css">
+    <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
     <title>BreakFast</title>
     <link rel="stylesheet" href="./CSS/style.css">
 </head>
@@ -13,22 +16,124 @@
     <header class="main-header">
         <h1>BreakFast</h1>
 
-        <nav>
+        <!-- <nav>
             <ul>
                 <li><a href="#">services</a></li>
-                <li><a href="#">contact us</a></li>
-                <li><a href="#">register/login</a></li>
+                <li><a href="#">Contact us</a></li>
             </ul>
-        </nav>
+        </nav> -->
     </header>
 
     <main>
-        <div class="showcase">
-            <img src="./Img/Food-banner.jpg" alt="jollof rice and meat">
-        </div>
+        <!-- Showcase Section -->
+        <section id="showcase-section">
+            <div class="showcase">
+                <img src="./Img/fried-rice-with-minced-pork-tomato-carrot-cucumber-plate.jpg" alt="jollof rice and meat">
+                <div class="hide">
+                    <img src="./Img/fried-rice-with-minced-pork-tomato-carrot-cucumber-plate.jpg" alt="jollof rice and meat">
+                </div>
+               
+            </div>
+            
+            <div class="showcase-about">
+
+                <div class="showcase-text">
+                    <h2>BreakFast</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo rerum sapiente enim recusandae repellat nulla ipsa vel expedita quod mollitia!</p>
+                </div>
+                
+                <div class="showcase-text">
+                    <h2>BreakFast</h2>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Cumque maxime rerum quia praesentium impedit, tempore ipsum cupiditate. Necessitatibus, mollitia quis.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Services Section -->
+        <section id="services-section">
+            <div class="services">
+
+                <div class="services-text">
+                    <h2>What do we Offer </h2>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quibusdam, numquam.</p>
+                </div>
+                    
+                <div class="services-imgs">
+                    <div class="image-card">
+                        <img src="./Img/food1.jpg" alt="">
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae, provident?</p>
+                    </div>
+
+                    <div class="image-card">
+                        <img src="./Img/food2.jpg" alt="">
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae, provident?</p>
+                    </div>
+                    
+                    <div class="image-card">
+                        <img src="./Img/food9.jpg" alt="">
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae, provident?</p>
+                    </div>
+
+                    <div class="image-card">
+                        <img src="./Img/food7.jpg" alt="">
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae, provident?</p>
+                    </div>
+                    
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact-section">
+            <div class="contact">
+                <div class="contact-img">
+                    <img src="./Img/pexels-igor-starkov-914388.jpg" alt="">
+                </div>
+            
+                <div class="contact-form">
+            
+                    <form action="" method="get">
+                        <h2>Contact Us</h2>
+                        <div>
+                            <label for="fullname">Full Name:</label>
+                            <input type="text" name="fullname" placeholder="John Doe">
+                        </div>
+            
+                        <div>
+                            <label for="email">E-mail:</label>
+                            <input type="email" name="email" placeholder="examsple@gmail.com">
+                        </div>
+            
+                        <div>
+                            <textarea name="textField"></textarea>
+                        </div>
+
+                        <div>
+                            <input type="submit" value="Send">
+                        </div>
+                    </form>
+                
+                </div>
+            </div>
+        </section>
+    
     </main>
 
-    <footer></footer>
+    <footer>
+        <h2>BreakFast</h2>
+        <div class="footer-text">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque facilis quo quaerat repellendus ea sequi architecto aspernatur nulla explicabo, non obcaecati nostrum id optio cumque.</p>
+            <p>Designed by Igbifa Godwin</p>
+        </div>
+        <div class="footer-socials">
+            <a href="https://twitter.com" target="_blank"><i class="bx bxl-twitter bx-md iclass"></i></a>
+            <a href="https://facebook.com"  target="_blank"><i class="bx bxl-facebook bx-md iclass"></i></a>
+            <a href=""><i class="bx bxl-instagram bx-md iclass"></i></a>
+            <a href=""><i class="bx bxl-youtube bx-md iclass"></i></a>
+        </div>
+
+        <p>Copyright &copy; 2022 BreakFast. All rights reserved.</p>
+    </footer>
 
 </body>
 </html>

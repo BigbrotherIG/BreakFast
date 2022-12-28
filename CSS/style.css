@@ -1,7 +1,7 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Fredoka&family=Lato&family=Montserrat&display=swap');
 
-
+/* Utilities */
 * {
     margin: 0;
     padding: 0;
@@ -15,17 +15,52 @@ a {
 body {
     font-family: "fredoka", monospace;
 }
+
+@keyframes slideFromLeft {
+    0% {transform: translateX(-100%);}
+    100% {transform: translateX(0);}
+}
+@keyframes slideFromRight {
+    0% {transform: translateX(100%);}
+    100% {transform: translateX(0);}
+}
+
 /* Main Section */
 .main-header {
-    position: absolute;
+    position: fixed;
     left: 0;
     right: 0;
-    padding: 5px 20px;
+    padding: 15px 20px;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    z-index: 1;
+    z-index: 5;
     color: #54ec0d;
+}
+
+.main-header.bg {
+    background-color: #fff;
+    box-shadow: 0 2px 2px 0px rgba(0, 0, 0, 0.253);
+}
+
+.main-header.bg li a{
+    color: rgb(0, 0, 0);
+    border: 1px solid #000;
+    border-radius: 40px;
+    padding: 8px;
+}
+
+.main-header.bg li a:hover{
+    background-color: #57ca4d;
+    border: 1px solid #000;
+    border-radius: 40px;
+    transform: scale(2.24);
+    transition: all 2s;
+}
+
+.main-header > h1 {
+    /* font-size: 3vw; */
+    font-size: clamp(16px, 5vw);
 }
 
 nav ul {
@@ -71,7 +106,6 @@ nav li a {
     animation-duration: 5s;
     animation-fill-mode: forwards;
     animation-iteration-count: infinite;
-
 }
 
 .hide {
@@ -95,9 +129,6 @@ nav li a {
         right: 200%;
         z-index: 3;
     }
-
-
-
 }
 
 .showcase-about {
@@ -115,10 +146,14 @@ nav li a {
 
 .showcase-text {
     height: 50vh;
-    background-color: #ecd5d5d7;
+    background-color: #b5f896;
     margin-top: 15px;
     width: 100%;
     border-radius: 3px;
+    animation: slideFromLeft 2s ease-in-out;
+}
+.showcase-text:nth-child(2) {
+    animation: slideFromRight 2s ease-in-out;
 }
 
 .showcase-text h2 {
@@ -151,8 +186,9 @@ nav li a {
 }
 
 .image-card {
+    margin-bottom: 20px;
     background-color: #fff;
-    width: 350px;
+    max-width: 350px;
     height: auto;
     display: flex;
     justify-content: center;
@@ -160,7 +196,7 @@ nav li a {
     justify-self:center;
     flex-direction: column;
     border-radius: 0 0 5px 5px;
-    box-shadow: 0 2px 3px 5px #f5f5f5;
+    box-shadow: 0 2px 3px 1px #faebeb;
 }
 
 .image-card p {
@@ -312,6 +348,9 @@ footer > p {
 /* Media Query For Tablet */
 @media screen and (max-width:768px) {
 
+    .main-header > h1 {
+        font-size: 16px;
+    }
     .showcase-about {
         flex-direction: column;
     }
@@ -350,7 +389,7 @@ footer > p {
     .services-imgs {
         grid-template-columns: repeat(1, 1fr);
     }
-    
+
 
     form input {
         width: 300px;

@@ -51,11 +51,11 @@ body {
 }
 
 .main-header.bg li a:hover{
-    background-color: #57ca4d;
+    background-color: #b5f896;
     border: 1px solid #000;
     border-radius: 40px;
     transform: scale(2.24);
-    transition: all 2s;
+    transition: all .5s;
 }
 
 .main-header > h1 {
@@ -152,7 +152,7 @@ nav li a {
     border-radius: 3px;
     animation: slideFromLeft 2s ease-in-out;
 }
-.showcase-text:nth-child(2) {
+.showcase-text:nth-of-type(2) {
     animation: slideFromRight 2s ease-in-out;
 }
 
@@ -332,13 +332,12 @@ footer > p {
     color: #00f;
 }
 
-.footer-socials  a:nth-of-type(2):hover {
+.footer-socials a:nth-of-type(2):hover {
     color: rgb(9, 102, 179);
 }
 .footer-socials a:nth-of-type(3):hover {
     color: #db8bb3;
 }
-
 .footer-socials a:nth-of-type(4):hover {
     color: #ff0000;
 }

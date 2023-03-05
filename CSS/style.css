@@ -173,6 +173,10 @@ nav li a {
     margin: 0 10px;
 }
 
+.services-text p {
+    margin-left: 5px;
+}
+
 .services-imgs {
     margin-top: 20px;
     display: grid;
@@ -197,7 +201,7 @@ nav li a {
 }
 
 .image-card p {
-    margin: 0 15px;
+    margin: 0 5px;
 }
 
 .image-card img {

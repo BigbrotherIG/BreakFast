@@ -91,9 +91,6 @@ nav li a {
     position: relative;
     top: 0;
     object-fit: fill;
-    /* background-position: center; */
-    /* background-attachment:fixed; */
-    
 }
 
 .showcase h1 {
@@ -329,15 +326,17 @@ footer > p {
 }
 
 .footer-socials a:hover {
-    color: #00f;
+    color: #00acee;
 }
 
 .footer-socials a:nth-of-type(2):hover {
-    color: rgb(9, 102, 179);
+    color: #3b5998;
 }
+
 .footer-socials a:nth-of-type(3):hover {
     color: #db8bb3;
 }
+
 .footer-socials a:nth-of-type(4):hover {
     color: #ff0000;
 }
